@@ -25,7 +25,7 @@ class HomeFragment : Fragment() {
             //navController.navigate(R.id.action_homeFragment_to_insideHome)
             val testArgument = "desde el home"
             val directions = HomeFragmentDirections.actionHomeFragmentToInsideHome(testArgument)
-            //navController.navigate(directions)
+            //findNavController().navigate(directions)
             NavHostFragment.findNavController(this).navigate(directions)
 
         }
